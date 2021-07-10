@@ -56,6 +56,7 @@ public class EmployeeController {
 		try {
 			service.deleteEmployee(id);
 			String message = "Employee '" + id + "' Deleted";
+			System.out.println("test");
 			response = new ResponseEntity<String>(message, HttpStatus.OK);
 		} catch (EmployeeNotFooundException e) {
 
